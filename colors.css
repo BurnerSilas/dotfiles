@@ -1,0 +1,17 @@
+/* colors.css */
+#asdf {
+  --primary-color: #3498db;
+  --green: #26A65B;
+  --orange: #ffbe61;
+  --red: #f53c3c;
+  --red2: #f38ba8;
+  --white: #ffffff;
+  --background-color: #000000;
+  --text-color: #d6d6d6;
+  --black: #000000;
+  --grey: #d6d6d6;
+  --dark-grey: #626262;
+  --darker-gray: #353535;
+  --color: #1e1e2e;
+}
+
