@@ -113,8 +113,11 @@
                 {
                     "label":"",
                     "command": "shutdown now"
-                }
-
+                },
+		{
+			"label":"💤",
+			"command": "systemctl hibernate"
+		}
             ]
         }
     }
