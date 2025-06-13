@@ -1,11 +1,12 @@
 {
-        "layer": "top",
+        "layer": "bottom",
         "position": "top",
+	"exclusive": true,
+  	"height": 30,
         "reload_style_on_change": true,
-        "modules-left": ["custom/notification","clock","custom/pacman","tray"],
-        "modules-center": ["hyprland/workspaces"],
-        "modules-right": ["group/expand","bluetooth","network","battery"],
-
+        "modules-center": ["clock"],
+        "modules-left": ["hyprland/workspaces","tray"],
+        "modules-right": ["group/expand","custom/pacman","bluetooth","network","battery","custom/notification"],
 
         "hyprland/workspaces": {
             "format": "{icon}",
