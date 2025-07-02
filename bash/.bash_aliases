@@ -1,3 +1,5 @@
+alias aliases='sudo cat ~/dotfiles/bash/.bash_aliases'
+
 # ----------------------------------------
 # Git Aliases
 # ----------------------------------------
@@ -22,22 +24,6 @@ alias drm='docker rm $(docker ps -a -q)'
 alias drmi='docker rmi $(docker images -q)'
 
 # ----------------------------------------
-# File System Navigation
-# ----------------------------------------
-alias ..='cd ..'
-alias ...='cd ../..'
-alias l='ls -CF'
-alias la='ls -A'
-alias ll='ls -alF'
-
-# ----------------------------------------
-# System Utilities
-# ----------------------------------------
-alias update='sudo apt update && sudo apt upgrade -y'  # Debian/Ubuntu only
-alias cls='clear'
-alias reload='source ~/.bashrc'
-
-# ----------------------------------------
 # Neovim Aliases
 # ----------------------------------------
 alias v='nvim'                  # quick launch
@@ -52,15 +38,38 @@ alias vf='nvim ~/.config/fastfetch/config.jsonc'
 alias vk='nvim ~/.config/kitty/kitty.conf'
 
 # ----------------------------------------
-# apt Aliases
-# ----------------------------------------
-alias apts='sudo apt search'    # search  app with apt
-alias apti='sudo apt install'   # install app with apt
-alias aptr='sudo apt remove'    # remove  app with apt
-
-# ----------------------------------------
 # fastfetch Aliases
 # ----------------------------------------
 alias f='fastfetch'
+
+# ----------------------------------------
+# File System Navigation
+# ----------------------------------------
+alias ..='cd ..'
+alias ...='cd ../..'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+
+# ----------------------------------------
+# pacman Aliases 
+# ----------------------------------------
+alias pacs='sudo pacman -Ss'    # search app in repos
+alias paci='sudo pacman -S'     # install app from repos
+alias pacr='sudo pacman -R'     # remove app
+
+# ----------------------------------------
+# yay Aliases 
+# ----------------------------------------
+alias yays='yay -Ss'            # search in repo + AUR
+alias yayi='yay -S'             # install from repo + AUR
+alias yayr='yay -R'             # remove package
+
+# ----------------------------------------
+# System Utilities
+# ----------------------------------------
+alias update='sudo pacman -Syu'
+alias cls='clear'
+alias reload='source ~/.bashrc'
 
 

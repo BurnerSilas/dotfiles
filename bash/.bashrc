@@ -120,3 +120,4 @@ clear
 fastfetch
 
 export PATH="$HOME/.npm-global/bin:$PATH"
+export MAKEFLAGS="-j$ (nproc)"
